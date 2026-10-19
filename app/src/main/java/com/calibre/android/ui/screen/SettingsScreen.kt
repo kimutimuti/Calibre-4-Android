@@ -58,7 +58,7 @@ fun SettingsScreen(
                 )
             }
 
-            HorizontalDivider(modifier = Modifier.padding(vertical = 24.dp))
+            Divider(modifier = Modifier.padding(vertical = 24.dp))
 
             // About セクション
             Text(
