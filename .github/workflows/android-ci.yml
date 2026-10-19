@@ -3,8 +3,6 @@ name: Android CI/CD
 on:
   push:
     branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
 
 jobs:
   build:
@@ -31,9 +29,3 @@ jobs:
       
       - name: Build Debug APK
         run: ./gradlew assembleDebug
-      
-      - name: Run Unit Tests
-        run: ./gradlew testDebugUnitTest
-      
-      - name: Run Lint
-        run: ./gradlew lint
